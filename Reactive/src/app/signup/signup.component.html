@@ -1,0 +1,19 @@
+
+<div class="marg"><h1>Welcome</h1>
+<form [formGroup]="registrationForm"  >
+  <label >Username</label><br>
+  <input type="text" formControlName="userName"  class="width"><br>
+  <div *ngIf="userName.invalid && userName.touched" class="err"> 
+   <p *ngIf="userName.errors?.required" class="err">Invalid Username</p> 
+   <p *ngIf="userName.errors?.minlength" class="err">Username must consist of atleast 5 characters</p> 
+  </div>  
+  <label>Password</label><br>
+  <input type="password" formControlName="password" class="width" ><br>
+  <label>Confirm Password</label><br>
+  <input type="password" formControlName="confirmPassword" class="width"><br>
+  <div *ngIf="registrationForm.invalid && registrationForm.touched" class="err">
+  <p *ngIf="registrationForm.errors?.misMatch">Password Do not match</p> </div>
+  <button (click)="registerUser()" class="butt">Register</button><br>
+  <button (click)="loginUser()" class="butt">Login</button>
+</form>
+</div>

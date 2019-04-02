@@ -1,0 +1,29 @@
+{
+  "movieList": [
+    {
+      "id": "1",
+      "name": "Kesari",
+      "Rating": "5"
+    },
+    {
+      "id": "2",
+      "name": "Golmaal",
+      "Rating": "5"
+    },
+    {
+      "id": "3",
+      "name": "Dhol",
+      "Rating": "5"
+    },
+    {
+      "id": "4",
+      "name": "Andaaz Apna Apna",
+      "rating": "5"
+    },
+    {
+      "id": "5",
+      "name": "Dhamaal",
+      "rating": "3"
+    }
+  ]
+}

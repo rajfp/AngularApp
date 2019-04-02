@@ -1,0 +1,13 @@
+<h1>List of Movies</h1>
+<ul *ngFor="let movie of movies">
+  <li (click)="Addfavourites(movie.title,movie.overview)">Name:{{movie.title}}</li>
+</ul>
+<div class="mod">Click on the movie name to add to favourites</div>
+<h1>List of Favourites of {{username}}</h1>
+<ul *ngFor="let movie of fav">
+  <li>Name:{{movie.name}} 
+  <br>Rating:{{movie.rating}} </li>
+</ul>
+<button (click)="logout()" class="butt">LogOut</button>
+
+    

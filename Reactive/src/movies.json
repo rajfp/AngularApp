@@ -1,0 +1,13 @@
+{
+    "moviesList":[
+        {
+        "name":"Teesra Badshah",
+        "rating":"4"
+        },
+        
+        {
+        "name":"Kesari",
+        "rating":"5"
+        }
+    ]
+}
